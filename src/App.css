@@ -1,0 +1,17 @@
+*{
+  font-size: 17px;
+}
+
+.App-header {
+  background-color: #39aebc;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+}
+
+.blur{ 
+  filter:blur(2px);
+}
+

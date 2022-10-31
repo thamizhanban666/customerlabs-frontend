@@ -54,7 +54,8 @@ function Sidebar({ showSidebar, setShowSidebar }) {
   }
   
   const handleSave = async () => {
-    
+    if(!segmentName) return alert("Enter the segment name")
+    if(!schema.length) return alert("Add schema to the segment")
     let body = {
       segment_name: segmentName,
       schema: schema.map((obj) => {
